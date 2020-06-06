@@ -1,8 +1,8 @@
 #!/bin/bash
 
-CURA_DIR=/opt/cura
+CURA_DIR=$HOME/.cache/cura_launcher
 LATEST_URL=https://github.com/Ultimaker/Cura/releases/latest
-[ -d $CURA_DIR ] || ( sudo mkdir -p $CURA_DIR && sudo chown -R $USER $CURA_DIR )
+[ -d $CURA_DIR ] || mkdir -p $CURA_DIR
 
 verlte() {
 		[  "$1" = "`echo -e "$1\n$2" | sort -V | head -n1`" ] && return 0 || return 1
