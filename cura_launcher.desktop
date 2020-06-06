@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Cura Launcher
+Comment=Fetch and launch the latest version of Cura
+Exec=/path/to/cura_launcher/cura_launcher.sh
+Icon=/path/to/icons/cura-icon.png
+Terminal=false
